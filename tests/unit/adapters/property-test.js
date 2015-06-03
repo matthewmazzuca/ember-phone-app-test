@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('adapter:property', 'Unit | Adapter | property', {
+moduleFor('adapter:property', 'PropertyAdapter', {
   // Specify the other units that are required for this test.
   // needs: ['serializer:foo']
 });
