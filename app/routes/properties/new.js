@@ -6,6 +6,8 @@ export default Ember.Route.extend({
 	},
 
 	renderTemplate: function() {
-		this.render('properties.edit', {controlelr: 'properties/new'});
+		this.render('properties.edit', {
+			controller: 'properties/new'
+		});
 	}
-})
+});

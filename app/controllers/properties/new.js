@@ -10,4 +10,4 @@ export default Ember.ObjectController.extend({
 			this.transitionToRoute('properties.edit', property);
 		}
 	}
-})
+});

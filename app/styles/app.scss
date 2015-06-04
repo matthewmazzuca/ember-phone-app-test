@@ -1,0 +1,66 @@
+$prime: #50c4d4;
+
+$dark: #262626;
+$grey: #333333;
+
+$white: #FFFFFF;
+$orange: #FF9300;
+
+html, body {
+  margin: 0px;
+  background-color: $orange;
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 60px;
+  background-color: $orange;
+}
+
+.container {
+  background-color: $white;
+}
+
+.title {
+  height: 80px;
+  line-height: 80px;
+  background-color: $prime;
+
+  color: $white;
+  font-size: 44px;
+  text-align: center;
+}
+
+.property-listing {
+  height: 140px;
+}
+
+.listing {
+  float: left;
+  color: $grey;
+
+  .name {
+    padding-bottom: 40px;
+    font-size: 38px;
+    a {
+      color: $dark;
+    }
+  }
+}
+
+.remove-property {
+  float: right;
+  margin: 40px;
+}
+
+.new-property {
+  background-color: $orange;
+  height: 200px;
+
+  text-align: center;
+  padding: 40px 0px;
+}
