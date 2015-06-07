@@ -4,6 +4,6 @@ export default Ember.Route.extend({
 	model: function(params){
 		var propID = this.modelFor('property').get('id');
 
-		return this.store.all('beacon');
+		return this.store.find('beacon');
 	}
 });

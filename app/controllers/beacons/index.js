@@ -1,5 +1,5 @@
 import Ember from 'ember';
 
-export default Ember.Controllr.extend({
+export default Ember.ArrayController.extend({
 
 });

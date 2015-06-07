@@ -47,11 +47,11 @@
 	<i> DEV Note: New custom fields only work when editing an alreadu created property. This is a suggested flow for ember simplicity</i>
 </div>
 
-{{#each f in model.fields}}
+{{#each field in model.fields}}
 <div class="property-setting">
-	{{input vallue=f.name}}
+	{{input value=field.name}}
 	<div class="setting">
-		{{input value=f.value}}
+		{{input value=field.value}}
 	</div>
 </div>
 {{/each}}
