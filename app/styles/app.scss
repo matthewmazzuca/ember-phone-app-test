@@ -1,14 +1,13 @@
 $prime: #50c4d4;
-
 $dark: #262626;
 $grey: #333333;
-
+$lightGrey: #eaeaea;
+$subGrey: #999999;
 $white: #FFFFFF;
-$orange: #FF9300;
 
 html, body {
   margin: 0px;
-  background-color: $orange;
+  background-color: $prime;
   font-size: 22px;
 }
 
@@ -16,51 +15,42 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+}
+
 .header {
   height: 60px;
-  background-color: $orange;
+  background-color: $prime;
 }
 
 .container {
   background-color: $white;
 }
 
-.title {
+.page-title {
   height: 80px;
   line-height: 80px;
-  background-color: $prime;
+  background-color: $dark;
 
   color: $white;
   font-size: 44px;
   text-align: center;
 }
 
-.property-listing {
-  height: 140px;
-}
-
-.listing {
-  float: left;
-  color: $grey;
-
-  .name {
-    padding-bottom: 40px;
-    font-size: 38px;
-    a {
-      color: $dark;
-    }
-  }
-}
-
-.remove-property {
-  float: right;
-  margin: 40px;
-}
-
-.new-property {
-  background-color: $orange;
-  height: 200px;
-
+.save-container {
+  padding: 60px 0px;
   text-align: center;
-  padding: 40px 0px;
 }
+
+.button {
+  border-radius: 4px;
+  background-color: $prime;
+  height: 60px;
+  padding: 0px 40px;
+
+  color: $white;
+  font-size: 36px;
+}
+
+@import 'properties';

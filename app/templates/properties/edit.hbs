@@ -1,34 +1,69 @@
-<h3> Property Edit </h3>
+<div class="container property-setting">
 
-<h4> Name </h4>
-{{input value=model.name}}
+<div class="property-setting">
+	<div class="setting-title"> Address </div>
+	<div class="setting"> 
+		{{input value=model.address}}
+	</div>
+</div>
 
-<h4> Address </h4>
-{{input value=model.address}}
+<div class="property-setting">
+	<div class="title"> Location </div>
+	<div class="setting"> 
+		MAP or Text Box?
+	</div>
+</div>
 
-<h4> Description </h4>
-{{input value=model.description}}
+<div class="property-setting">
+	<div class="title"> Price </div>
+	<div class="setting"> 
+		{{input value=model.price}}
+	</div>
+</div>
 
-<h4> Lat </h4>
-{{input value=model.lat}}
+<div class="property-setting">
+	<div class="title"> Agent Name </div>
+	<div class="description"> 
+		{{input value=model.agent}}
+	</div>
+</div>
 
-<h4> Long </h4>
-{{input value=model.lng}}
+<div class="property-setting">
+	<div class="title"> Description </div>
+	<div class="setting sub-text"> 
+		e.g. Bedrooms: 2
+		<button {{action "newField"}}> + </button>
+	</div>
+</div>
+
+<div class="property-setting">
+	<div class="title"> Add new attribute </div>
+	<div class="setting"> 
+		{{input value=model.agent}}
+	</div>
+</div>
+
+<div class="sub-text">
+	<i> DEV Note: New custom fields only work when editing an alreadu created property. This is a suggested flow for ember simplicity</i>
+</div>
 
 {{#each f in model.fields}}
-  <h4> {{f.name}}: </h4> 
-  {{input value=f.value}}
+<div class="property-setting">
+	{{input vallue=f.name}}
+	<div class="setting">
+		{{input value=f.value}}
+	</div>
+</div>
 {{/each}}
 
-<h3> New Custom Field </h3>
-<i> Note: New custom fields only work when editing an already created property.
-  This is a suggested flow for Ember simplicity </i>
-<h4> Field Name </h4>
-{{input value=newFieldName}}
+<div class="property-setting">
+	{{input value=newFieldName placeholder="e.g. \"Takes Debit\""}}
+	<div class="setting"> 
+		{{input value=newFieldValue placeholder="e.g. \"Yes\""}}
+	</div>
+</div>
 
-<h4> Field Value </h4>
-{{input value=newFieldValue}}
-
-<button {{action "newField"}}> Add Field </button>
-
-<input type="submit" value="Save" {{action "save"}}>
+<div class="save-container">
+	<button class="button" {{action "save"}}></button>
+</div>
+</div>
