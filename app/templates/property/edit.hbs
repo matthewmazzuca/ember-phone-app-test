@@ -1,5 +1,5 @@
 <div class="container property-setting">
-
+{{#link-to 'beacons.index'}}beacons link {{/link-to}}
 <div class="property-setting">
 	<div class="setting-title"> Address </div>
 	<div class="setting"> 
@@ -51,7 +51,7 @@
 <div class="property-setting">
 	{{input value=field.name}}
 	<div class="setting">
-		{{input value=field.value}}
+		{{input value=field .value}}
 	</div>
 </div>
 {{/each}}
