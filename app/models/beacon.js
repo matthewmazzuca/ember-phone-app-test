@@ -1,9 +1,10 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-	name: DS.attr('string'),
-	service_id: DS.attr('string'),
-	micro_apps: DS.hasMany('micro_app', {async:true})
+  name: DS.attr('string'),
+  service_id: DS.attr('string'),
+  micro_apps: DS.hasMany('micro_app', {async:true})
+
 }).reopenClass({
 	FIXTURES: [
 	{
@@ -23,4 +24,4 @@ export default DS.Model.extend({
 		micro_apps: [1,2]
 	}
 	]
-})
+});

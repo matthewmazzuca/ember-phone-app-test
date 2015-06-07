@@ -18,7 +18,7 @@ export default DS.Model.extend({
 		id: 1,
 		address: "63 Rollscourt Drive",
 		price: "600000",
-		agent: "Matthew",
+		agent: "Gleb",
 		description: "Dwelling",
 		lat: 1,
 		lng: 1,
@@ -28,11 +28,12 @@ export default DS.Model.extend({
 		id: 2,
 		address: "52 Fifeshire Road",
 		price: "600000",
-		agent: "Matthew",
+		agent: "Joey",
 		description: "Dwelling",
 		lat: -100,
 		lng: 100,
 		fields: [2],
 		beacons: [1,2]
-	}]
+	}
+	]
 });

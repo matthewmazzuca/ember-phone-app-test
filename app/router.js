@@ -8,19 +8,22 @@ var Router = Ember.Router.extend({
 export default Router.map(function() {
   this.resource('properties', function() {
     this.route('new'),
+
     this.resource('property', {path: ':property_id'}, function() {
       this.route('edit'),
+
       this.resource('beacons', function() {
         this.route('new'),
+
         this.resource('beacon', {path: ':beacon_id'}, function() {
           this.route('edit');
         });
       });
 
-      this.resource('micro-apps', function() {
+      this.resource('micro_apps', function() {
         this.route('new'),
         this.resource('micro_app', {path: ':micro_app_id'}, function() {
-
+          this.route('edit');
         });
       });
     });

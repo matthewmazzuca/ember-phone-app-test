@@ -1,4 +1,7 @@
-import { moduleFor, test } from 'ember-qunit';
+import {
+  moduleFor,
+  test
+} from 'ember-qunit';
 
 moduleFor('adapter:micro-app', 'MicroAppAdapter', {
   // Specify the other units that are required for this test.

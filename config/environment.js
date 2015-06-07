@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'protractr-front',
+    modulePrefix: 'openhouse-front',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

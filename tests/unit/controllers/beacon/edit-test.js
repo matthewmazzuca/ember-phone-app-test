@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('controller:beacons/edit', {
+moduleFor('controller:beacon/edit', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

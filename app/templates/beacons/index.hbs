@@ -1,25 +1,27 @@
+{{#link-to 'beacons.new'}}NEW BEACON{{/link-to}}
+
 <div class="container beacons-index">
-	{{#each beacon in model}}
-	<div class="beacon-listing">
-		<div class="right-listing">
-			{{#link-to 'micro_apps.new'}} + {{/link-to}}
-		</div>
+  {{#each beacon in model}}
+  <div class="beacon-listing">
 
-		<div class="listing">
-			<div class="name">
-				{{beacon.name}}
-				{{#link-to 'beacon.edit' beacon.id}} Edit {{/link-to}}
-			</div>
-			<div> {{beacon.service_id}} </div>
+    <div class="right-listing">
+      {{#link-to 'micro_apps.new'}} + {{/link-to}}
+    </div>
 
-			{{!-- Micro Apps --}}
+    <div class="listing">
+      <div class="name">
+        {{beacon.name}}
+        {{#link-to 'beacon.edit' beacon.id}} Edit {{/link-to}}
+      </div>
+      <div> {{beacon.service_id}} </div>
 
-			{{#each microapp in beacon.micro_apps}}
-			<div class="microapp">
-				{{#link-to 'micro_app.edit' microapp.id}}{{microapp.name}}{{/link-to}}
-			</div>
-			{{/each}}
-		</div>
-	</div>
-	{{/each}}
+      <!-- Micro Apps -->
+      {{#each microapp in beacon.micro_apps}}
+        <div class="microapp">
+          {{#link-to 'micro_app.edit' microapp.id}}{{microapp.name}}{{/link-to}}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  {{/each}}
 </div>
