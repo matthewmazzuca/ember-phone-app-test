@@ -29,12 +29,13 @@ export default Router.map(function() {
           this.route('edit');
         });
       });
+
       this.resource('highlights', function() {
         this.resource('highlight', {path: ':highlight_id'}, function() {
-          this.route('show');
           this.route('edit');
-        });
+            });
       });
+
     });
   });
 });
