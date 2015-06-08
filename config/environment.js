@@ -10,7 +10,6 @@ module.exports = function(environment) {
       'img-src': "'self' www.facebook.com p.typekit.net",
       'style-src': "'self' 'unsafe-inline' use.typekit.net",
       'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com"
-
     },
     modulePrefix: 'openhouse-front',
     environment: environment,
@@ -30,11 +29,11 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-     // ENV.APP.LOG_RESOLVER = true;
-     // ENV.APP.LOG_ACTIVE_GENERATION = true;
-     // ENV.APP.LOG_TRANSITIONS = true;
-     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    // ENV.APP.LOG_RESOLVER = true;
+    // ENV.APP.LOG_ACTIVE_GENERATION = true;
+    // ENV.APP.LOG_TRANSITIONS = true;
+    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+    // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {

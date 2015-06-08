@@ -2,6 +2,7 @@
 	Properties
 </div>
 
+<div class="container">
 {{#each property in model}}
 	<div class="property-listing">
 		<div class="right-listing">
@@ -13,13 +14,15 @@
 				{{property.agent}}
 				{{#link-to 'property.edit' property.id}}Edit Shortcut{{/link-to}}
 			</div>
+			
 		</div>
   </div>
 	{{/each}}
+</div>
 
 <div class="new-property">
 	{{#link-to 'properties.new'}}
-		Add New Property
+		ADD NEW PROPERTY
 		<div class="new-property-button">
 			<img src="img/new-property-icon.png">
 		</div>

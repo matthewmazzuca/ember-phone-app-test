@@ -4,10 +4,10 @@
 
 <ul>
 	{{#each item in controllers.admin-navigation.model}}
-	<li>
-		<img class="icon" {{bind-attr src="item.icon"}}>
-		{{#link-to item.route}}{{item.title}}{{/link-to}}
-	</li>
+		<li>
+	  	<img class="icon" {{bind-attr src=item.icon}}>
+	  		{{#link-to item.route}}{{item.title}}{{/link-to}}
+	  </li>
 	{{/each}}
 </ul>
 

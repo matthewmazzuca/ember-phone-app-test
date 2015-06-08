@@ -1,22 +1,22 @@
 {{partial 'property/hero-header'}}
 
-<div class="down-icon-cont">
-  <img src="img/down-icon.png">
-</div>
-
-
-<div class="property-show">
-  <div class="property-apps">
-
-    <div class="app-card">
-      <img src="img/comment-icon.png" class="app-icon">
-        Comment
-    </div>
-
-    {{#each highlight in model.highlights}}
-    {{partial 'highlight/inline'}}
-    {{/each}}
-
+  <div class="down-icon-cont">
+    <img src="img/down-icon.png">
   </div>
 
-</div>
+  <div class="property-show">
+
+    <div class="property-apps">
+
+      <div class="app-card">
+        <img src="img/comment-icon.png" class="app-icon">
+          Comment
+      </div>
+
+      {{#each highlight in model.highlights}}
+        {{partial 'highlight/inline'}}
+      {{/each}}
+      
+    </div>
+
+  </div>

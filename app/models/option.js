@@ -1,12 +1,12 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-	name: DS.attr('string'),
-	image_url: DS.attr('string'),
+  name: DS.attr('string'),
+  image_url: DS.attr('string'),
 
 }).reopenClass({
 	FIXTURES: [
-	{
+		{
 			id: 1,
 			name: "Rectangular Fireplace",
 			image_url: "fireplace-1.jpg" 
@@ -24,4 +24,4 @@ export default DS.Model.extend({
 			image_url: "floors-2.jpg"
 		}
 	]
-})
+});

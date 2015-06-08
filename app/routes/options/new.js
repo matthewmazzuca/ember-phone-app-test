@@ -7,7 +7,7 @@ export default Ember.Route.extend({
 		return this.store.createRecord('option');
 	},
 
-	renderTemplate: function() {
-		this.render('opion.edit');
+	renderTempalte: function() {
+		this.render('option.edit');
 	}
 });
