@@ -11,7 +11,8 @@ export default DS.Model.extend({
   lng: DS.attr('number'),
 
   fields: DS.hasMany('field', {async: true, embedded: 'always'}),
-  beacons: DS.hasMany('beacon', {async: true})
+  beacons: DS.hasMany('beacon', {async: true}),
+  highlights: DS.hasMany('highlights', {async: true, embedded: 'always'})
   
 }).reopenClass({
 	FIXTURES: [
@@ -25,7 +26,8 @@ export default DS.Model.extend({
 		lat: 1,
 		lng: 1,
 		fields: [1],
-		beacons: [1]
+		beacons: [1],
+		highlights: [1]
 	}, {
 		id: 2,
 		address: "52 Fifeshire Road",
@@ -36,7 +38,8 @@ export default DS.Model.extend({
 		lat: -100,
 		lng: 100,
 		fields: [2],
-		beacons: [1,2]
+		beacons: [1,2],
+		highlights: [2]
 	}
 	]
 });

@@ -24,7 +24,14 @@ export default Router.map(function() {
 
       this.resource('micro_apps', function() {
         this.route('new'),
+
         this.resource('micro_app', {path: ':micro_app_id'}, function() {
+          this.route('edit');
+        });
+      });
+      this.resource('highlights', function() {
+        this.resource('highlight', {path: ':highlight_id'}, function() {
+          this.route('show');
           this.route('edit');
         });
       });
