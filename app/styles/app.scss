@@ -11,6 +11,7 @@ html, body {
   background-color: $prime;
   font-size: 11px;
   font-family: "Brandon Grotesque";
+  overflow-y: hidden;
 }
 
 a {
@@ -20,6 +21,12 @@ a {
 
 button {
   border: none;
+}
+
+.container {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
 }
 
 .header {
@@ -47,7 +54,7 @@ button {
 }
 
 .button {
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: $prime;
   height: 30px;
   padding: 0px 20px;

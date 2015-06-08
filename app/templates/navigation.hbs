@@ -1,9 +1,32 @@
 <div {{bind-attr class="controllers.application.navVisible:visible:nav"}}>
-	{{!class visible is visible while nav is making it invisible}}
 
-<ul class="left">
-	{{#each item in model}}
-	  <li>{{#link-to item.route}}{{item.title}}{{/link-to}}</li>
-	{{/each}}
-</ul>
+	<div class="avatar">
+  	<img src="avatar.png">
+  </div>
+
+  <div class="property">
+  	<div class="property-name">
+  		{{controllers.application.propertyAddress}}
+  	</div>
+
+  	<div class="property-location">
+  		{{controllers.application.propertyLocation}}
+  	</div>
+  </div>
+
+  <div class="small-nav-spacer"></div>
+
+	<ul >
+		{{#each item in model}}
+		  <li>
+		  	<img class="icon" {{bind-attr src="icon"}}>
+		  	{{#link-to item.route}}{{item.title}}{{/link-to}}
+		  </li>
+		{{/each}}
+	</ul>
+
+	<div class="small-nav-spacer"></div>
+
+	{{partial 'admin-navigation'}}
+
 </div>
