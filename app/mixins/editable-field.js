@@ -1,3 +1,4 @@
+
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
@@ -5,6 +6,7 @@ export default Ember.Mixin.create({
 
 	edit: function() {
 		this.set('isEditing', true);
+		console.log("Test")
 	},
 
 	finishEdit: function() {
